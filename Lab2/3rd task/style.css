@@ -63,6 +63,7 @@ button {
 	margin-bottom: 0.75rem;
 	outline: none;
 	border: none;
+	transition: all 0.2s ease;
 }
 
 .login-btn {
@@ -76,12 +77,26 @@ button {
 	margin-bottom: 0.75rem;
 }
 
+.login-btn:hover {
+	background-color: #5294ff;
+	cursor: pointer;
+}
+
 .forgot-btn {
 	position: relative;
 	background-color: #ffff;
 	color: #0967ff;
 	font-weight: 600;
 	margin-bottom: 2.5rem;
+}
+
+.forgot-btn:hover {
+	cursor: pointer;
+}
+
+.reg-btn:hover {
+	background-color: #70b460;
+	cursor: pointer;
 }
 
 .forgot-btn::after {

@@ -1,0 +1,327 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	max-width: 70vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.greeting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.greeting h1 {
+	font-size: 4rem;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 10rem;
+}
+
+.greeting p {
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	font-size: 1.05rem;
+	margin-top: -1rem;
+}
+
+.greeting button {
+	background-color: black;
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+	outline: none;
+	font-weight: bold;
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	text-align: center;
+	width: 12rem;
+	font-size: 1rem;
+	border-radius: 10px;
+}
+
+.cards-price {
+	display: flex;
+	justify-content: space-around;
+}
+
+.card {
+	width: 20rem;
+	text-align: center;
+	border: rgba(0, 0, 0, 0.3) solid;
+	border-radius: 10px;
+	box-shadow: 2px 2px 70px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cards-price {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.card.recommended {
+	position: relative;
+	border-radius: 16px;
+	border-top: 2rem solid #1f6feb;
+	border-left: 0.5rem #1f6feb solid;
+	border-right: 0.5rem #1f6feb solid;
+	border-bottom: 0.5rem #1f6feb solid;
+}
+
+.card.recommended::before {
+	content: 'RECOMMENDED';
+	position: absolute;
+	top: -1.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #1f6feb;
+	color: white;
+	padding: 6px 16px;
+	font-size: 0.75rem;
+	font-weight: 700;
+	border-radius: 999px;
+	letter-spacing: 0.05em;
+}
+
+.price {
+}
+
+.header-card {
+	padding-bottom: 1rem;
+}
+
+.header-card h2 {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.about {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 0.9rem;
+	font-weight: bold;
+	height: 2rem;
+}
+
+.dollar {
+	font-size: 1.5rem;
+	color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	bottom: 1rem;
+}
+
+.price-num {
+	font-size: 3rem;
+}
+
+.usd {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-right: 0.5rem;
+}
+
+.month {
+	color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	bottom: 1rem;
+}
+
+.continue-btn {
+	background-color: black;
+	outline: none;
+	font-weight: bold;
+	border: none;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	padding: 1rem;
+	width: 90%;
+	font-size: 0.9rem;
+	border-radius: 10px;
+}
+
+.notif-card {
+	height: 1.5rem;
+}
+
+.start-free-trial {
+	width: 45%;
+	background-color: black;
+	outline: none;
+	font-weight: bold;
+	border: none;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	padding: 1rem;
+	font-size: 0.8rem;
+	border-radius: 10px;
+}
+
+.contact-button {
+	width: 45%;
+	background-color: white;
+	outline: none;
+	font-weight: bold;
+	border: none;
+	color: black;
+	border: rgba(0, 0, 0, 0.5) solid;
+	cursor: pointer;
+	text-align: center;
+	padding: 1rem;
+	font-size: 0.8rem;
+	border-radius: 10px;
+}
+
+.body-card {
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 2rem;
+	min-height: 30rem;
+}
+
+.included {
+	display: flex;
+	font-size: 0.9rem;
+	gap: 1rem;
+}
+
+.included img {
+	width: 1rem;
+}
+
+.dropdown {
+	display: flex;
+	flex-direction: column;
+	width: 15rem;
+	text-align: center;
+	gap: -2rem;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown summary {
+	cursor: pointer;
+	list-style: none;
+}
+
+.arrow-card-collapse {
+	display: flex;
+	gap: 1rem;
+	text-align: center;
+}
+
+details img {
+	transition: all 0.3s ease;
+}
+
+.sub {
+	font-size: 0.75rem;
+	margin-top: -0.75rem;
+	font-weight: 300;
+	margin-left: -2.5rem;
+}
+
+details[open] img {
+	transform: rotate(90deg);
+}
+
+.dropdown summary::-webkit-details-marker {
+	display: none;
+}
+
+.addons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: center;
+	gap: 4rem;
+	align-items: baseline;
+}
+
+.addon-card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 22rem;
+	align-items: baseline;
+	box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.3);
+	border: rgba(0, 0, 0, 0.3) solid;
+	padding: 2rem;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.addon-card-body:hover {
+	transform: scale(1.04);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon-add {
+	width: 3rem;
+	height: 3rem;
+}
+
+.addon-card-body p {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.addon-learn-more {
+	display: flex;
+}
+
+.arrow-add {
+	width: 1.5rem;
+}
+
+.content {
+	margin-top: -1.5rem;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.img-wrap {
+	position: relative;
+	width: 2rem;
+	height: 2rem;
+}
+
+.img-wrap img {
+	position: absolute;
+	inset: 0;
+	width: 1.5rem;
+	height: 1.5rem;
+	transition: opacity 0.09s ease-in;
+}
+
+.arrow-add-hover {
+	opacity: 0;
+}
+
+.h1-add {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.addon-card-body:hover .addon-learn-more .arrow-add-hover {
+	opacity: 1;
+}
+
+.addon-card-body:hover .addon-learn-more .arrow-add {
+	opacity: 0;
+}

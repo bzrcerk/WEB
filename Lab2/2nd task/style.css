@@ -1,0 +1,168 @@
+body {
+	font-family: 'roboto slab', sans-serif;
+}
+
+.container {
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	display: flex;
+}
+
+.logo {
+	width: 6rem;
+
+	position: absolute;
+	left: 2rem;
+	top: 2rem;
+}
+
+.greeting {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.greeting h2 {
+	padding-top: 8rem;
+	font-size: 2.75rem;
+	font-weight: 400;
+	width: 70%;
+}
+
+.stories {
+	margin-top: -2.5rem;
+	width: 35rem;
+	filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
+}
+
+.registration {
+	width: 40%;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	padding-left: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.gradient-text {
+	background: #f9ce34;
+	background: linear-gradient(
+		125deg,
+		rgba(249, 206, 52, 1) 0%,
+		rgba(238, 42, 123, 1) 50%,
+		rgba(98, 40, 215, 1) 100%
+	);
+	color: transparent;
+	background-clip: text;
+}
+
+.registration p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+input {
+	border-radius: 12px;
+	padding: 1rem;
+
+	border: rgba(0, 0, 0, 0.1) solid;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+.login-btn {
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+	border-radius: 17px;
+	background-color: #0967ff;
+	color: white;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.forgot-btn {
+	background-color: transparent;
+	margin-bottom: 4rem;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.forgot-btn::after {
+	content: '';
+	background-color: black;
+	height: 1px;
+	width: 0;
+	position: absolute;
+	bottom: -0.5rem;
+	left: 0;
+	transition: width 0.3s ease;
+}
+
+.forgot-btn:hover::after {
+	width: 100%;
+}
+
+.loginn-fb-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 30px;
+	background-color: transparent;
+	border: rgba(0, 0, 0, 0.2) solid;
+	cursor: pointer;
+}
+
+.facebook-logo {
+	width: 1rem;
+	height: 1rem;
+}
+
+.reg-btn {
+	padding: 1rem;
+	border-radius: 30px;
+	background-color: transparent;
+	border: #0967ff solid;
+	color: #0967ff;
+	cursor: pointer;
+}
+
+.reg-btn:hover {
+	background-color: #0967ff;
+	color: white;
+}
+
+.meta-logo {
+	width: 1rem;
+	height: 1rem;
+}
+
+.meta-tag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.1rem;
+}
