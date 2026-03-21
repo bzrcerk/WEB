@@ -1,4 +1,4 @@
-from models.Animal import Animal
+from Task2.models.Animal import Animal
 
 
 class Dog(Animal):
