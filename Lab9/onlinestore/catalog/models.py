@@ -10,10 +10,10 @@ class Product(models.Model):
     is_active = models.BooleanField(default=True)
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     def __str__(self):
-        return self.name
+        return self.name + " " + str(self.id)
 
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
     def __str__(self):
-        return self.name
+        return self.name + " " + str(self.id)
